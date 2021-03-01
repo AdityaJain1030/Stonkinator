@@ -1,15 +1,17 @@
 {
-    "compilerOptions": {
-      "target": "es5",
-      "module": "commonjs",
-      "declaration": true,
-      "outDir": "./lib",
-      "strict": true
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"],
-    "typedocOptions": {
-      "entryPoints": ["src/index.ts"],
-      "out": "docs"
-    }
-  }
+	"compilerOptions": {
+		"target": "ES2015",
+		"module": "commonjs",
+		"declaration": true,
+		"outDir": "./lib",
+		"strict": true,
+		"esModuleInterop": true,
+		"stripInternal": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules", "**/__tests__/*"],
+	"typedocOptions": {
+		"entryPoints": ["src/index.ts"],
+		"out": "docs"
+	}
+}
